@@ -26,3 +26,13 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
 }
+
+/* utils */
+.container {
+  width: min(90%, 50rem);
+  margin-inline: auto;
+}
+
+.grid {
+  display: grid;
+}
