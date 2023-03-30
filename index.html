@@ -19,6 +19,118 @@
       <p id="description">Answer some questions and help us improve our
         platform.</p>
     </header>
+
+    <form class="form" id="survey-form">
+      <div>
+        <label for="name" class="form-label" id="name-label">Name</label>
+        <input type="text" class="form-control" name="name" id="name"
+          placeholder="eg. Jane Doe" required>
+      </div>
+
+      <div>
+        <label for="email" class="form-label" id="email-label">Email</label>
+        <input type="email" class="form-control" name="email" id="email"
+          placeholder="eg. your@email.com" required>
+      </div>
+
+      <div>
+        <label for="number" class="form-label" id="number-label">Age</label>
+        <input type="number" class="form-control form-number" name="age"
+          id="number" min="10" max="99" placeholder="eg. 20">
+      </div>
+
+      <div>
+        <label for="dropdown" class="form-label">How do you describe
+          yourself?</label>
+        <select class="form-control form-select" name="gender" id="dropdown">
+          <option value="Self-taught learning to code">Self-taught learning to
+            code
+          </option>
+          <option value="Learning to code at university">Learning to code at
+            university</option>
+          <option
+            value="I already work in the area, I'm here just reviewing some concepts">
+            I already work in the area, I'm here just reviewing some concepts
+          </option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div>
+        <p class="form-label">How has your experience with the platform been?
+        </p>
+
+        <div class="grid">
+          <label for="excellent">
+            <input type="radio" class="form-radio" name="radio" id="excellent"
+              value="Excellent">
+            <span>Excellent</span>
+          </label>
+          <label for="good">
+            <input type="radio" class="form-radio" name="radio" id="good"
+              value="Good" checked>
+            Good
+          </label>
+          <label for="bad">
+            <input type="radio" class="form-radio" name="radio" id="bad"
+              value="Bad">
+            Bad
+          </label>
+          <label for="terrible">
+            <input type="radio" class="form-radio" name="radio" id="terrible"
+              value="Terrible">
+            Terrible
+          </label>
+        </div>
+      </div>
+
+      <div>
+        <p class="form-label">What would you like to see improved? (Check all
+          that apply)</p>
+
+        <div class="grid">
+          <label for="forum">
+            <input type="checkbox" class="form-checkbox" name="forum" id="forum"
+              value="Forum">
+            Forum
+          </label>
+          <label for="wiki">
+            <input type="checkbox" class="form-checkbox" name="wiki" id="wiki"
+              value="Wiki">
+            Wiki
+          </label>
+          <label for="challenges">
+            <input type="checkbox" class="form-checkbox" name="challenges"
+              id="challenges" value="Challenges">
+            Challenges
+          </label>
+          <label for="translations">
+            <input type="checkbox" class="form-checkbox" name="translations"
+              id="translations" value="Translations">
+            Translations
+          </label>
+          <label for="open-sounce-community">
+            <input type="checkbox" class="form-checkbox"
+              name="open-sounce-community" id="open-sounce-community"
+              value="Open Sounce Community">
+            Open Sounce Community
+          </label>
+        </div>
+      </div>
+
+      <div>
+        <label for="comments-or-suggestions" class="form-label">Do you have some
+          additional
+          comment
+          or suggest for us?</label>
+        <textarea class="form-textarea" name="comments-or-suggestions"
+          id="comments-or-suggestions"></textarea>
+      </div>
+
+      <div>
+        <input type="submit" class="button" id="submit" value="Send my answers">
+      </div>
+    </form>
   </div>
 
 </body>
