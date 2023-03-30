@@ -42,3 +42,72 @@ body {
   margin-bottom: 3.2rem;
   padding-top: 16rem;
 }
+
+.form {
+  display: grid;
+  gap: 2rem;
+
+  margin-bottom: 8rem;
+}
+
+.form-control,
+.form-textarea {
+  width: 100%;
+  border: none;
+  border-radius: 0.8rem;
+  background-color: hsl(0, 0%, 97%);
+  box-shadow: inset 0 0 0 0.1rem hsl(0, 0%, 93%);
+  font: inherit;
+  padding: 0.8rem 1.2rem;
+}
+
+.form-textarea {
+  resize: none;
+  height: 14rem;
+}
+
+.form-select {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0iIzU4NjA2OSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNC40MjcgOS40MjdsMy4zOTYgMy4zOTZhLjI1MS4yNTEgMCAwMC4zNTQgMGwzLjM5Ni0zLjM5NkEuMjUuMjUgMCAwMDExLjM5NiA5SDQuNjA0YS4yNS4yNSAwIDAwLS4xNzcuNDI3ek00LjQyMyA2LjQ3TDcuODIgMy4wNzJhLjI1LjI1IDAgMDEuMzU0IDBMMTEuNTcgNi40N2EuMjUuMjUgMCAwMS0uMTc3LjQyN0g0LjZhLjI1LjI1IDAgMDEtLjE3Ny0uNDI3eiIgLz48L3N2Zz4=);
+  background-repeat: no-repeat;
+  background-position: right 0.8rem center;
+  background-size: 1.6rem;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.form-number::-webkit-outer-spin-button,
+.form-number::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.form-number {
+  appearance: textfield;
+}
+
+.form-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+label:not(.form-label) {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.button {
+  border: none;
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+
+  font: inherit;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.8rem;
+
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
